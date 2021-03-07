@@ -1,0 +1,381 @@
+/* Universal */    
+.non-selectable {
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+ /* Universal */
+.link_linked {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.link_linked:visited {
+    color: white;
+    text-decoration: none;
+}
+.link_linked:link {
+    color: white;
+    text-decoration: none;
+}
+.nav__logo-icon {
+    grid-column: 1 / 2;
+    margin: auto;
+    min-width: 50px;
+}
+
+.header__bar-ul-nav {
+    list-style:none;
+    background: rgb(32, 6, 45);
+    font-family: 'Kanit', sans-serif;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(6,1fr) 32vw;
+    grid-gap: 20px;
+    padding: 7px;
+    text-align: center;
+}
+
+.header__bar-ul-nav li{
+    display: flex;
+    align-items: center;
+}
+
+.header__elements-bar1-li-ul-nav {
+    grid-column: 2 / span  1;
+    align-self: center;
+    justify-self: center;
+}
+.header__elements-bar2-li-ul-nav {
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: center;
+}
+.header__elements-bar3-li-ul-nav {
+    grid-column: 4 / 5;
+    align-self: center;
+    justify-self: center;
+}
+
+/*                          CELDA 4 DE NAV; BUSCADOR DE PRODUCTOS O NUTRIENTES */
+.header__elements-bar4-li-ul-nav {
+    grid-column: 5 / 8;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    z-index: 800;
+
+}
+.nav__box-input-container {
+    background: white;
+    width: 45vw;
+    height: 38px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 900;
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: repeat(2,1fr);
+    margin:20px;
+}
+
+.srch-input {
+    display: flex;
+    margin: 0px 1vw;
+    align-items: center;
+    width : 36vw;
+    height: 30px;
+    border: none;
+    position: relative;
+    z-index: 1000;
+    align-self: center;
+    justify-self: start;
+}
+.nav__search-icon {
+    position: relative;
+    align-self: center;
+    justify-self: end;
+    margin: 0px 15px;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+}
+/*                                    BARRA DISCLAIMER */
+.body__disclaimer {
+    color: white;
+    background: #fe9926;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 4px;
+}
+.body__disclaimer p {
+    display:inline-block;
+    padding-right: 20px;
+}
+.body__buttondisclaimer {
+    background-color: #ffa844;
+    border: 1px solid rgb(32, 6, 45);
+    color: white;
+    padding: 2px;
+}
+
+
+/*                                   AQUI EMPIEZA EL CONTENIDO    */
+.body__brackground_first_panel{
+    display:grid;
+    background-color: #e3e6e8;
+    width:100%;
+    grid-template-rows: 7vw 480px;
+    grid-template-columns: 1fr 12fr 1fr;
+}
+
+.body__firts_panel_h1{
+    display: flex;
+    background-color: #e3e6e8;
+    grid-column:2/3;
+    grid-row:1/2;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size:4vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__firts_panel{
+    display:flex;
+    background-image: url("../images/background_2.jpg");
+    background-color: #e3e6e8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column:2/3;
+    grid-row:2/3;
+}
+
+.body__background_second_panel{
+    display:grid;
+    background-color: #e3e6e8;
+    grid-template-rows: 480px;
+    grid-template-columns: 1fr 12fr 1fr;
+}
+.body__second_panel{
+    background-color: #f2f6f8;
+    grid-column:2/3;
+    grid-row:1/2;
+    
+}
+
+/*                    AQUI EMPIEZA EL FOOTER */
+.main-f{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.main-f ul {
+    list-style:none;
+    text-decoration: none;
+    color: white;
+    background: rgb(32, 6, 45);
+    font-family: 'Kanit', sans-serif;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+}
+.main-f ul i {
+    display:inline-block;
+    font-size: 35px;
+    }
+.footer__item1 {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+}
+.footer__item2 {
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: center;
+}
+.footer__item3 {
+    grid-column: 4 / 5;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer__item4 {
+    grid-column: 5 / 6;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+/*                    AQUI EMPIEZA EL RESPONSIVE DESIGN 768px*/
+@media only screen and (max-width: 768px) {
+    /* Barra dentro de <nav> principal con grid */
+    .header__bar-ul-nav {
+        width: 100%;
+        grid-template-rows: 50px  50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2px;
+        padding: 5px
+    }
+    .nav__box-input-container {
+        background: white;
+        width: 60vw;
+        height: 38px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 900;
+        display: grid;
+        grid-template-rows: 40px;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+     /* Input busqueda */
+    .srch-input {
+        display: flex;
+        margin: 0px 1vw;
+        align-items: center;
+        width : 45vw;
+        height: 30px;
+        border: none;
+        position: relative;
+        z-index: 1000;
+        align-self: center;
+        justify-self: start;
+    }
+    /* Logo dentro del nav */
+    .nav__logo-icon {
+        display:none;
+    }
+    .header__elements-bar1-li-ul-nav {
+        grid-column: 1 / 2;
+    }
+    .header__elements-bar2-li-ul-nav {
+        grid-column: 2 / 3;
+    }
+    .header__elements-bar3-li-ul-nav {
+        grid-column: 3 / 4;
+    }
+    .header__elements-bar4-li-ul-nav {
+        grid-column:  1 / 4;
+        grid-row: 2 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+    /*                                   AQUI EMPIEZA EL CONTENIDO    */
+.body__brackground_first_panel{
+    display:grid;
+    background-color: #e3e6e8;
+    width:100%;
+    grid-template-rows: 9vw 50vw;
+    grid-template-columns: 1fr 12fr 1fr;
+}
+.body__firts_panel_h1{
+    display: flex;
+    background-color: #e3e6e8;
+    grid-column:2/3;
+    grid-row:1/2;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size:5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__firts_panel{
+    display:flex;
+    background-image: url("../images/background_2.jpg");
+    background-color: #e3e6e8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column:2/3;
+    grid-row:2/3;
+}
+
+/* Footer */
+    .footer__item4{
+        font-size: 2.0vw;
+    }
+}
+
+/*                    AQUI EMPIEZA EL RESPONSIVE DESIGN 360px*/
+@media only screen and (max-width: 360px) {
+    /* Barra dentro de <nav> principal con grid */
+    .header__bar-ul-nav {
+        width: 100%;
+        grid-template-rows: 70px 70px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    /* Caja contenedora del input y del logo de lupa */
+    .nav__box-input-container {
+        background: white;
+        width: 280px;
+        height: 40px;
+    }
+     /* Input busqueda */
+    .srch-input {
+        width : 240px;
+    }
+    /* Logo dentro del nav */
+    .nav__logo-icon {
+        display:none;
+    }
+    .header__elements-bar1-li-ul-nav {
+        grid-column: 1 / 2;
+    }
+    .header__elements-bar2-li-ul-nav {
+        grid-column: 2 / 3;
+    }
+    .header__elements-bar3-li-ul-nav {
+        grid-column: 3 / 4;
+    }
+    .header__elements-bar4-li-ul-nav {
+        grid-column:  1 / 4;
+        grid-row: 2 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+    /*                                   AQUI EMPIEZA EL CONTENIDO    */
+.body__brackground_first_panel{
+    display:grid;
+    background-color: #e3e6e8;
+    width:100%;
+    grid-template-rows: 180px;
+    grid-template-columns: 1fr ;
+}
+.body__firts_panel{
+    display:flex;
+    background-image: url("../images/background_0.jpg");
+    background-color: #e3e6e8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column:2/3;
+    grid-row:2/3;
+    margin:10px;
+}
+
+/* Footer */
+    .footer__item4{
+        font-size: 2.0vw;
+    }
+    .main-f ul {
+        list-style:none;
+        text-decoration: none;
+        color: white;
+        background: rgb(32, 6, 45);
+        font-family: 'Kanit', sans-serif;
+        display: grid;
+        grid-template-rows: 50px;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 20px;
+    }
+}
