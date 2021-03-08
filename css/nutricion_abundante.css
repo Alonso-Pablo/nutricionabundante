@@ -35,7 +35,7 @@ body {
     font-family: 'Kanit', sans-serif;
     display: grid;
     grid-template-rows: 50px;
-    grid-template-columns: 1fr 2fr 3fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1.5fr 1fr 1fr 3fr 3fr 1fr;
     grid-gap: 20px;
     padding: 7px;
     text-align: center;
@@ -62,6 +62,21 @@ body {
         align-self: center;
         justify-self: center;
     }
+        .nav__gridForBar{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+            .bar3Element-1{
+                grid-column:1/2;
+                margin: auto 8px auto auto;
+                font-size: 1.4vw;
+            }
+            .bar3Element-2{
+                grid-column:2/2;
+                text-align: left;
+            }
+
     .header__elements-bar4-li-ul-nav {
         grid-column: 5 / 6;
         align-self: center;
@@ -70,7 +85,7 @@ body {
 
 /*                          CELDA 4 DE NAV; BUSCADOR DE PRODUCTOS O NUTRIENTES */
 .header__elements-bar5-li-ul-nav {
-    grid-column: 6 / 8;
+    grid-column: 8 / 10;
     align-self: center;
     justify-self: center;
 }
@@ -128,11 +143,22 @@ body {
 .body__brackground_first_panel{
     margin-left:auto;
     margin-right: auto;
-    max-width: 1270px;
+    max-width: 1920px;
     display:grid;
-    grid-template-rows: 5vw 26vw;
-    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: 4vw 25vw;
+    grid-template-columns: 4fr 12fr 4fr;
 }
+    .firstPanel-left{
+        grid-column:1/2;
+        grid-row:2/3;
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(227,230,232,1) 80%);
+        clip-path: polygon(60% 0, 35% 50%, 60% 100%, 25% 100%, 0% 50%, 25% 0%);
+        width:50%;
+        height:60%;
+        margin:auto auto;
+        transition: all 1s;
+    }
+
 
     .body__firts_panel_h1{
         display: flex;
@@ -148,7 +174,15 @@ body {
     .body__firts_panel{
         display:flex;
         background-image: url("../images/background_2.jpg");
-    /*    background-color: #e3e6e8; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column:2/3;
+        grid-row:2/3;
+    }
+    .body__firts_panel-2{
+        display:flex;
+        background-image: url("../images/background_0.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
