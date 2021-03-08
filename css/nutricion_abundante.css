@@ -146,17 +146,37 @@ body {
     max-width: 1920px;
     display:grid;
     grid-template-rows: 4vw 25vw;
-    grid-template-columns: 4fr 12fr 4fr;
+    grid-template-columns: 2fr 12fr 2fr;
 }
     .firstPanel-left{
         grid-column:1/2;
         grid-row:2/3;
-        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(227,230,232,1) 80%);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(227,230,232,1) 70%);
         clip-path: polygon(60% 0, 35% 50%, 60% 100%, 25% 100%, 0% 50%, 25% 0%);
-        width:50%;
-        height:60%;
+        width:70%;
+        height:70%;
         margin:auto auto;
-        transition: all 1s;
+        transition: all 1.2s;
+        cursor: pointer;
+    }
+    .firstPanel-left:hover{
+        cursor: pointer;
+        background: #fe9926;
+    }
+    .firstPanel-right{
+        grid-column:3/4;
+        grid-row:2/3;
+        background: linear-gradient(90deg, rgba(227,230,232,1) 0%, rgb(255, 255, 255) 70%);
+        clip-path: polygon(60% 0, 100% 50%, 60% 100%, 25% 100%, 60% 50%, 25% 0%);
+        width:70%;
+        height:70%;
+        margin:auto auto;
+        transition: all 1.2s;
+        cursor: pointer;
+    }
+    .firstPanel-right:hover{
+        cursor: pointer;
+        background: #fe9926;
     }
 
 
@@ -261,7 +281,7 @@ body {
         .descriptionProduct_1{
             grid-column:2/3;
             grid-row:3/4;
-            font-size: 1.2vw;
+            font-size: clamp(8px, 2vw, 16px);
             text-align:center;
         }
 

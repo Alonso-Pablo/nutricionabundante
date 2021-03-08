@@ -10,7 +10,25 @@ ul_nav.removeChild(ul_nav.children[0]);
 const backgroundFirstPanel = document.getElementById('backgroundFirstPanel');
 const firstPanelLeft = document.getElementById('firstPanelLeft');
 
+const firstPanelRight = document.getElementById('firstPanelRight');
+
 firstPanelLeft.addEventListener('click', ()=>{
+    if (backgroundFirstPanel.classList.value === 'body__firts_panel'){
     backgroundFirstPanel.classList.replace('body__firts_panel','body__firts_panel-2');
-    console.log('Si');
+    console.log(backgroundFirstPanel.classList.value);
+    } else {
+    backgroundFirstPanel.classList.replace('body__firts_panel-2','body__firts_panel');
+    console.log(backgroundFirstPanel.classList.value);
+    }
+    
+})
+
+firstPanelRight.addEventListener('click', ()=>{
+    if (backgroundFirstPanel.classList.value === 'body__firts_panel'){
+        backgroundFirstPanel.classList.replace('body__firts_panel','body__firts_panel-2');
+        console.log(backgroundFirstPanel.classList.value);
+        } else {
+        backgroundFirstPanel.classList.replace('body__firts_panel-2','body__firts_panel');
+        console.log(backgroundFirstPanel.classList.value);
+        }
 })
