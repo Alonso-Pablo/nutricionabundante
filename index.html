@@ -21,12 +21,12 @@
     <body>
         <header>    
             <nav>
-                <ul class="header__bar-ul-nav">
-                    <img title="logo-icon" alt="logo-icon" src="images/logo-icon.png" class="nav__logo-icon">
-                    <li class="header__elements-bar1-li-ul-nav"><a href="Inicio.html" class="link_linked"><i class="fas fa-home"></i><p>INICIO</p></a></li>
-                    <li class="header__elements-bar2-li-ul-nav"><a href="Productos.html" class="link_linked"><i class="fas fa-box"></i><p>PRODUCTOS NUTRICIONALES</p></a></li>
-                    <li class="header__elements-bar3-li-ul-nav"><a href="Contactanos.html" class="link_linked"><i class="fas fa-paper-plane"></i><p>CONTACTANOS</p></a></li>
-                    <li class="header__elements-bar4-li-ul-nav"> 
+                <ul id="ul_nav" class="header__bar-ul-nav">
+                    <img title="logo-icon" alt="logo-icon" src="images/logo-icon.png" class="nav__logo-icon" id="logo-icon">
+                    <li class="header__elements-bar2-li-ul-nav"><a href="Inicio.html" class="link_linked"><i class="fas fa-home"></i><p>INICIO</p></a></li>
+                    <li class="header__elements-bar3-li-ul-nav"><a href="Productos.html" class="link_linked"><i class="fas fa-box"></i><p>PRODUCTOS NUTRICIONALES</p></a></li>
+                    <li class="header__elements-bar4-li-ul-nav"><a href="Contactanos.html" class="link_linked"><i class="fas fa-paper-plane"></i><p>CONTACTANOS</p></a></li>
+                    <li class="header__elements-bar5-li-ul-nav"> 
                         <div class="nav__box-input-container">
                             <input placeholder="BUSCAR PRODUCTO O POR NUTRIENTE" class="srch-input">
                             <img title="search-icon" alt="search-icon" src="images/search-icon.svg" class="nav__search-icon">
@@ -35,26 +35,61 @@
                   </ul>
             </nav>
         </header>    
-        <div class="body__disclaimer non-selectable" id="body_disclaimer"><p>Algunos de los productos mostrados pueden no estar disponible momentaneamente</p><button class="body__buttondisclaimer">Aceptar</button> </div>
+        <div class="body__disclaimer non-selectable" id="body_disclaimer"><p>ALGUNOS DE LOS PRODUCTOS MOSTRADOS PUEDEN NO ESTAR DISPONIBLES MOMENTANEAMENTE</p><button class="body__buttondisclaimer">ACEPTAR</button> </div>
 
-
+            <!--Certificados de la empresa, hace cuantos años estan, en cuantos paises estan-->
         <div class="body__brackground_first_panel">
-            <h1 class="body__firts_panel_h1"> ¿POR QUÉ OMNILIFE?</h1>
+            <h1 class="body__firts_panel_h1 non-selectable"> ¿POR QUÉ OMNILIFE?</h1>
             <div class="body__firts_panel"></div>
         </div>
+
+            <!-- Micelizacion, numero de productos, beneficios por sistemas -->
         <div class="body__background_second_panel">
-            <p class="body__second_panel">30 años en pie</p>
+            <h2 class="body__second_panel_h2 non-selectable">¡ALGUNOS DE LOS PRODUCTOS!</h2>
+            <!-- Thermogen tea limon -->
+            <div class="body__second_panel-1 forSecondPanel">
+                <div class="top_black"></div>
+                <h2 class="titleProduct_1 text_black_kanit non-selectable" >THERMOGEN TEA LIMÓN</h2>
+                <img alt="thermogen-tea-limon" title="thermogen-tea-limon" class="imageProduct_1" src="images/product_thermogen-tea-limon_s.png">
+                <p class="descriptionProduct_1 text_black_kanit non-selectable">Suplemento dietario en polvo dietético para preparar
+                    bebida a base de extracto de té negro y polinicotinato de cromo, sabor limón.</p>
+            </div>
+            <!-- POWER MAKER SUPREME -->
+            <div class="body__second_panel-2 forSecondPanel">
+                <div class="top_black"></div>
+                <p class="titleProduct_1 text_black_kanit non-selectable" >POWER MAKER SUPREME</p>
+                <img alt="power-maker-supreme" title="power-maker-supreme" class="imageProduct_1" src="images/product_power_s.png">
+                <p class="descriptionProduct_1 text_black_kanit non-selectable">Suplemento dietario en polvo dietético para preparar
+                    bebida a base de maltodextrina, aminoácidos, vitaminas y minerales, sabor naranja.</p>
+            </div>
+            <!-- BIOCROS SUPREME -->
+            <div class="body__second_panel-3 forSecondPanel">
+                <div class="top_black"></div>
+                <p class="titleProduct_1 text_black_kanit non-selectable" >BIOCROS SUPREME</p>
+                <img alt="biocros-supreme" title="biocros-supreme" class="imageProduct_1" src="images/product_biocros_s.png">
+                <p class="descriptionProduct_1 text_black_kanit non-selectable">Producto nutricional sabor cítrico, con vitaminas del complejo B, glicina y taurina, que favorecen los procesos para la producción de energía.
+                     Con glicósidos de esteviol, endulzante de origen natural.</p>
+            </div>
+            <!-- OMNIPLUS TRADICIONAL -->
+            <div class="body__second_panel-4 forSecondPanel">
+                <div class="top_black"></div>
+                <p class="titleProduct_1 text_black_kanit non-selectable" > OMNIPLUS TRADICIONAL</p>
+                <img alt="omniplus" title="omniplus" class="imageProduct_1" src="images/product_omniplus_box.png">
+                <p class="descriptionProduct_1 text_black_kanit non-selectable">Producto nutricional sabor frutas que por su contenido de vitaminas y minerales de fácil absorción, aporta beneficios nutricionales al organismo.</p>
+            </div>
+            
         </div>
 
         <footer class="main-f">
             <ul>
                 <li></li>
-                <li class="footer__item1"><a href="https://www.facebook.com/zulema.tevez" class="link_linked"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="footer__item2"><a href="https://wa.me/5491133136799" class="link_linked"><i class="fab fa-whatsapp"></i></a></li>
-                <li class="footer__item3"><p>NUTRICIÓN ABUNDANTE</p></li>
+                <li class="footer__item1"><p>NUTRICIÓN ABUNDANTE</p></li>
+                <li class="footer__item2"><a href="https://www.facebook.com/zulema.tevez" class="link_linked"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="footer__item3"><a href="https://wa.me/5491133136799" class="link_linked"><i class="fab fa-whatsapp"></i></a></li>
                 <li class="footer__item4"><p>Somos distribuidores independientes de Omnilife</p></li>
             </ul>
         </footer>
-        <script src="js/nutricion.js"></script>
+
         </body>
+        <script src="js/nutricion.js"></script>
 </html>
